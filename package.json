@@ -1,0 +1,41 @@
+{
+  "name": "aptitrail-practice-engine",
+  "version": "0.1.0",
+  "description": "Question-bank-independent practice selection, scoring, bookmark expansion, and revision scheduling extracted from AptiTrail.",
+  "type": "module",
+  "license": "AGPL-3.0-only",
+  "private": true,
+  "engines": {
+    "node": ">=24"
+  },
+  "author": "Yadhunandan G S",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.mts",
+      "import": "./src/index.mjs"
+    }
+  },
+  "files": [
+    "src/",
+    "examples/",
+    "README.md",
+    "PROVENANCE.md",
+    "CHANGELOG.md",
+    "COPYRIGHT",
+    "CONTRIBUTING.md",
+    "SECURITY.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test tests/*.test.mjs",
+    "example": "node examples/demo.mjs",
+    "check": "node --check src/index.mjs && node --check examples/demo.mjs && node scripts/check-publication.mjs"
+  },
+  "keywords": [
+    "education",
+    "practice",
+    "quiz",
+    "scoring",
+    "spaced-repetition"
+  ]
+}
